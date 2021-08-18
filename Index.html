@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="./src/style/reset.css">
+    <link rel="stylesheet" href="./src/style/main.css">
+    <link rel="stylesheet" href="./src/style/header.css">
+    <link rel="stylesheet" href="./src/style/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat:wght@400;500;600;700&family=Maven+Pro:wght@400;500;600;700;800;900&display=swap"rel="stylesheet">
+
+     <link rel="stylesheet" href="./src/style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="./src/style/owl/owl.theme.default.min.css">
+
+
+
+</head>
+
+<body>
+
+    <header class="container-header">
+        <nav class="container__navegacao">
+            <div class="container-1 ">
+                <h1 class="logo">Netflix</h1>
+                <select class="nav-1__responsivo" name="Navegar" id="Navegar">
+                    <option>Navegar</option>
+                    <option value="">Início</option>
+                    <option value="">Séries</option>
+                    <option value="">Filmes</option>
+                    <option value="">Bombando</option>
+                    <option value="">Minha Lista</option>
+                    </select>
+                <ul class="navegacao">
+                    <li><a href="#" class="navegacao__link">Início</a></li>
+                    <li><a href="#" class="navegacao__link">Séries</a></li>
+                    <li><a href="#" class="navegacao__link">Filmes</a></li>
+                    <li><a href="#" class="navegacao__link">Bombando</a></li>
+                    <li><a href="#" class="navegacao__link">Minha Lista</a></li>
+                </ul>
+
+            </div>
+
+            <div class="navegacao-2">
+                <input class="navegacao-2__objeto navegacao-2__objeto--input" type="text">
+                <i class="fas fa-search navegacao-2__objeto teste"></i>
+                <p class="navegacao-2__objeto navegacao-2__objeto--texto">Infantil</p>
+                <i class="fas fa-bell navegacao-2__objeto"></i>
+                <img class="navegacao-2__objeto navegacao-2__objeto--img" src="./src/Image/profile-icon.png" alt="">
+                <div class="navegacao-2__objeto">
+                    <i class="fas fa-caret-down drop-down"></i>
+                </div>
+
+            </div>
+        </nav>
+        <div class="descricao-capa">
+            <p class="descricao-capa__titulo">Vingança sabor Cereja</p>
+
+            <div class="descricao-capa__prologo">
+                <p class="descricao-capa__prologo--texto"> Assista à minissérie agora</p>
+                <p class="descricao-capa__prologo--texto">Uma cineasta vai para Hollywood no começodos anos 1990 para
+                    fazer seu filme, mas se depara com um mundo alucinante de sexo, magia, vingança...e gatinhos.</p>
+            </div>
+            <div calss="descricao-capa__titulo__botao">
+
+                <button class="botao"><i class="fas fa-play"></i>Assistir</button>
+                <button class="botao"><i class="fas fa-info-circle"></i>Mais Informações</button>
+            </div>
+        </div>
+
+
+        <div class="gradiente"></div>
+
+    </header>
+
+
+    <div class="carrosel-filmes">
+        <h2 class="filme-descricao">Continuar assistindo</h2>
+        <div class="owl-carousel owl-theme box-item">   
+            <div class="item"><img class="box-filme" src="./src/Image/image-1.jpg"></div>
+            <div class="item"><img class="box-filme" src="./src/Image/image-2.jpg"></div>
+            <div class="item"><img class="box-filme" src="./src/Image/image-3.jpg"></div>
+            <div class="item"><img class="box-filme" src="./src/Image/image-4.jpg"></div>
+            <div class="item"><img class="box-filme" src="./src/Image/image-5.jpg"></div>
+            <div class="item"><img class="box-filme" src="./src/Image/image-6.jpg"></div>
+            <div class="item"><img class="box-filme" src="./src/Image/image-7.jpg"></div>
+            <div class="item"><img class="box-filme" src="./src/Image/image-8.jpg"></div>
+            <div class="item"><img class="box-filme" src="./src/Image/image-9.jpg"></div>
+        </div>
+    </div>
+    <div class="carrosel-filmes ">
+        <h2 class="filme-descricao filme-descricao-margin">Populares</h2>
+        <div class="owl-carousel owl-theme box-item">   
+            <div class="item"><img class="box-filme" src="./src/Image/image-10.jpg"></div>
+            <div class="item"><img class="box-filme" src="./src/Image/image-11.jpg"></div>
+            <div class="item"><img class="box-filme" src="./src/Image/image-12.jpg"></div>
+            <div class="item"><img class="box-filme" src="./src/Image/image-13.jpg"></div>
+            <div class="item"><img class="box-filme" src="./src/Image/image-14.jpg"></div>
+            <div class="item"><img class="box-filme" src="./src/Image/image-15.jpg"></div>
+            <div class="item"><img class="box-filme" src="./src/Image/image-16.jpg"></div>
+            <div class="item"><img class="box-filme" src="./src/Image/image-17.jpg"></div>
+            <div class="item"><img class="box-filme" src="./src/Image/image-18.jpg"></div>
+        </div>
+    </div>
+    
+
+
+
+
+    <footer class="cotainer footer-container">
+        <div class="redes-sociais">
+            <img src="./src/Image/facebook-square-brands.svg" alt="" class="redes-sociais_imagem">
+            <img src="./src/Image/instagram-brands.svg" alt="" class="redes-sociais_imagem">
+            <img src="./src/Image/twitter-square-brands.svg" alt="" class="redes-sociais_imagem">
+            <img src="./src/Image/youtube-brands.svg" alt="" class="redes-sociais_imagem">
+        </div>
+        <ul class="footer-nav">
+
+            <div class="footer-nav__colunas" >
+                <li><a class="footer-nav__link" href="#">Idioma e legenda</a></li>
+                <li><a class="footer-nav__link" href="#">Imprensa</a></li>
+                <li><a class="footer-nav__link" href="#">Privacidade</a></li>
+                
+
+            </div>
+            <div class="footer-nav__colunas">
+                <li><a class="footer-nav__link" href="#">Audiodescrição</a></li>
+                <li><a class="footer-nav__link" href="#">Relação com investidores</a></li>
+                <li><a class="footer-nav__link" href="#">Avisos legais</a></li>
+
+            </div>
+
+            <div class="footer-nav__colunas">
+                <li><a class="footer-nav__link" href="#">Centro de ajuda</a></li>
+                <li><a class="footer-nav__link" href="#">Carreiras</a></li>
+                <li><a class="footer-nav__link" href="#">Prefeências de cookies</a></li>
+
+            </div>
+            <div class="footer-nav__colunas"> 
+                <li><a class="footer-nav__link" href="#">Cartão pré-pago</a></li>
+                <li><a class="footer-nav__link" href="#">Termos de uso</a></li>
+                <li><a class="footer-nav__link" href="#">Informações corporativas</a></li>
+
+            </div>
+        </ul>
+        <div class="footer-button">
+            <button class="nav-button__link"> Código de serviço</button>
+        </div>
+        <p class="footer-logo"><i class="far fa-copyright"></i> 1997-2021 Netflix, Inc.</p>
+
+    </footer>
+
+    
+    <script src="src/Js/owl/efeitos.js"></script>
+    <script src="src/Js/owl/jquery.min.js"></script>
+    <script src="src/Js/owl/owl.carousel.min.js"></script>
+    <script src="src/Js/owl/carousel.js"></script>
+    <script src="https://kit.fontawesome.com/8cdef71e83.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
