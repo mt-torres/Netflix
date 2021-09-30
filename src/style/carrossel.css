@@ -1,0 +1,76 @@
+.carrossel{
+    display: flex;
+    height: 175px;
+    align-items: center;
+}
+
+.carrossel__container{
+    margin-left: 50px;
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    align-items: center;
+    z-index: 1;
+    width: 1249px;
+   
+}
+
+.carrossel__container:hover{
+    height: 175px;
+}
+
+.box-filme{
+    margin-right: .4rem;
+    width: 244px;
+    height: 137px;
+    border-radius: 5px;
+    transition: all linear;
+    cursor: pointer;
+    
+}
+
+.box-filme:hover {
+    transform: scale(1.2)
+}
+
+.box-filme:hover:nth-child(5n + 1) {
+    transform: scale(1.2) translate(30px,0px);
+}
+
+.box-filme:hover:nth-child(5n + 5) {
+    transform: scale(1.2) translate(-30px,0px);
+}
+
+
+
+.carrossel__botao{
+    position: absolute;
+    width: 50px;
+    height: 137px;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position-y: center;
+    background-position-x: center;
+    background-color: rgba(0,0,0,.0);
+    cursor: pointer;
+    z-index: 2;
+}
+
+.carrossel__botao:hover{
+    
+    background-color: rgba(0,0,0,.7);
+}
+
+.botao--left{
+    background-image: url('../Image/icons/chevron-left-solid.png');
+    left: 0;
+    display: none;
+    
+}
+
+.botao--right{
+    background-image: url('../Image/icons/chevron-right-solid.png');
+    right: 0;
+    
+}

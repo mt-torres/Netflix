@@ -1,0 +1,64 @@
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 40px;
+    transition: width linear .2s;
+    background-color: transparent;
+    
+    
+}
+
+.search--shown{
+    background-color: black;
+    opacity: .7;
+    border: 2px solid white; 
+    margin-right: 1rem;
+    width: 280px;
+    
+}
+
+
+.navegacao-2__objeto--input{
+    background-color: black;
+    color: white;
+    font: inherit;
+    height: 30px;
+    border: none;
+    outline: none;
+    width:2px;
+    transition: all ease-in-out .3s;
+    display: none;
+    
+}
+
+
+.navegacao-2__objeto--input--shown{
+    width: 70%;
+    
+}
+
+.icon-search{
+    background-image: url('../Image/icons/search-solid.png');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position-y: center;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.icon-close {
+    background-image: url('../Image/icons/times-solid.png');
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position-y: center;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.icon-close--shown {
+    visibility: visible;
+}
+

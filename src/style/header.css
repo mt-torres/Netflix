@@ -3,7 +3,7 @@
     flex-direction: column;
     background:no-repeat url(/src/Image/capa.jpg);
     background-size: cover;
-    height: 550px;    
+    box-sizing: border-box; 
     
 }
 
@@ -12,7 +12,10 @@
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
+    padding-top: .75rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-bottom: .75rem;
     position: fixed;
     transition-timing-function: ease-in-out;
     transition: all .5s ;
@@ -52,7 +55,6 @@
 }
 
 .logo{
-    margin-left: 1.5rem;
     margin-right: 3rem;
     font-size: 3rem;
     color: var(--vermelho);
@@ -70,7 +72,7 @@
 
 .navegacao__link:hover{
     color: var(--branco-hover);
-    transition: color ease-in-out .5s;
+    transition: color ease-in-out .3s;
 }
 
 .teste{
@@ -80,20 +82,8 @@
     margin-right: 1rem;
     cursor: pointer;
 }
-.navegacao-2__objeto--input{
-    display: none;
-    
-
-}
-
-.navegacao-2__objeto--input--show{
-    display: flex;
-    
-}
-
 
 .navegacao-2__objeto--texto{
-    text-transform: uppercase;
     letter-spacing: .01rem;
 }
 .navegacao-2__objeto:nth-child(5){
@@ -102,6 +92,7 @@
 
 .navegacao-2__objeto--img{
     border-radius: 5px;
+    width: 32px;
 }
 
 .navegacao-2__objeto:nth-child(6){
@@ -109,23 +100,31 @@
 }
 
 
-.fas{
-    transition: transform ease-in-out .5s;
+.navegacao-2__objeto--drop-down .drop-down{
+    transition: transform ease-in-out .2s;
     
 }
 
-.drop-down:hover{
+.navegacao-2__objeto--drop-down:hover .drop-down  {
     transform: rotate(180deg);
     
-    
 }
+
+.container-descricao-capa{
+    display: flex;
+    margin-top: 5rem;
+    margin-left: 2.5rem;
+
+}
+.container-descricao-capa:nth-child(2){
+    margin-right: 2rem;
+    margin-top: 5rem;
+}
+
 .descricao-capa {
-    margin-top: 3rem;
-    margin-left: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 550px;
     width: 50%;
 }
 
@@ -134,7 +133,6 @@
     font-size: 4rem;
     margin-bottom: 2rem;
     color: #f7e800;
-    margin-top: 2rem;
 
 }
 
@@ -167,7 +165,6 @@
     margin-right: .5rem;
 }
 .gradiente{
-        
     height: 7.5rem;
     background-image: linear-gradient(180deg, transparent ,rgba(37,37,37, 0.61),var(--preto));
     width: 100%;

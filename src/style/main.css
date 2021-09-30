@@ -3,7 +3,7 @@
     --branco: #ffffff;
     --vermelho:#e50914;
     --branco-selecao:#dcdcdc;
-    --branco-hover:#b9b8b8;
+    --branco-hover:#b4afaf;
     --branco-transparente:#FFFFFFAA
 }
 
@@ -16,32 +16,4 @@ body{
 }
 
 
-.box-filme{
-    width: 260px;
-    border-radius: 5px; 
-    
-}
-
-
-
-.box-filme:hover{
-    transform: scale3d(1.3,1.3,1.5);
-    
-    
-}
-.carrosel-filmes{
-    margin-left: 2rem;
-
-}
-.filme-descricao{
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: .5rem;
-   
-}
-
-.filme-descricao-margin {
-    margin-top: 2rem;
-    
-}
 
