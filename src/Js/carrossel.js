@@ -1,87 +1,96 @@
-const direita =document.querySelector('.botao--right')
-const esquerda =document.querySelector('.botao--left')
-const carrossel = document.querySelector('.carrossel__container')
-const btnIndicador = document.querySelectorAll('.carrossel_titulos--btn--indicador')
-let scrolIndicador = 0;
+const direita = document.querySelectorAll('.botao--right')
+const esquerda = document.querySelectorAll('.botao--left')
+const scrolIndicador = document.querySelectorAll('.carrossel__container')
 
 
+direita.forEach(element => {
+    element.addEventListener('click', (event) => {
+        let scroll = element.nextElementSibling;
+        scroll.scrollLeft  += 1248;
+        if (element.nextElementSibling.scrollLeft >= 0) {
+            element.previousElementSibling.style.display = 'block';
+        }
 
-direita.addEventListener('click', ()=>{
-    carrossel.scrollLeft += 1248;
-    scrolIndicador += 1248;  
-    console.log(scrolIndicador) 
-    if(carrossel.scrollLeft >= 0){
-        esquerda.style.display='block'  
-    }
-    
-    if(carrossel.scrollLeft > 2300){
-        carrossel.scrollLeft = 0;
-        esquerda.style.display='none';
-        scrolIndicador = 0; 
-        console.log(scrolIndicador) 
-    }
-    
-    indicador()
+        if (element.nextElementSibling.scrollLeft > 2300) {
+            element.nextElementSibling.scrollLeft = 0;
+            element.previousElementSibling.style.display = 'none';
+        }
+    })
+})
 
+esquerda.forEach(element => {
+    element.addEventListener('click', (event) => {
+        const pai = element.parentNode;
+        const alvo = pai.querySelector('.carrossel__container');
+        alvo.scrollLeft -= 1248;
+        if (alvo.scrollLeft <= 1260) {
+            element.style.display = 'none';
+        }
+    })
 
 })
 
-esquerda.addEventListener('click', ()=>{
-    carrossel.scrollLeft += -1248;
-    scrolIndicador -= 1248;  
-    if(carrossel.scrollLeft <=1260){
-        esquerda.style.display='none' 
-        scrolIndicador = 0;  
+
+scrolIndicador.forEach(element =>{
+    element.addEventListener('scroll',(event, scroll)=>{
+        scroll = element.scrollLeft;
+        indicador(event,scroll)
+    })
+})
+ 
+
+function indicador(event, scroll) {
+    const primeiro = event.target.closest('.carrossel');
+    const segundo = primeiro.previousElementSibling;
+    const irmao = segundo.querySelectorAll('.carrossel_titulos--btn--indicador');
+
+    if (scroll >= 0 && scroll <= 1199) {
+        irmao[2].classList.remove('carrossel_titulos--btn--indicador--3');
+        irmao[1].classList.remove('carrossel_titulos--btn--indicador--2');
+        irmao[0].classList.add('carrossel_titulos--btn--indicador--1');
+
     }
+
+    if (scroll >= 1200 && scroll <= 1299) {
+        irmao[2].classList.remove('carrossel_titulos--btn--indicador--3');
+        irmao[0].classList.remove('carrossel_titulos--btn--indicador--1');
+        irmao[1].classList.add('carrossel_titulos--btn--indicador--2');
+
+
+    }
+     if (scroll >= 1300 && scroll <= 2500) {
+        irmao[1].classList.remove('carrossel_titulos--btn--indicador--2');
+        irmao[2].classList.add('carrossel_titulos--btn--indicador--3');
+    }
+
    
-    indicador()
-})
-
-function indicador(){
-    
-    if(scrolIndicador == 1248){
-        console.log(scrolIndicador)
-        btnIndicador.forEach(element =>{
-            element.classList.remove('carrossel_titulos--btn--indicador--1'); 
-            element.classList.add('carrossel_titulos--btn--indicador--2');
-        })
-    
-    }if (scrolIndicador == 2496){
-        btnIndicador.forEach(element =>{
-            element.classList.remove('carrossel_titulos--btn--indicador--2'); 
-            element.classList.add('carrossel_titulos--btn--indicador--3');
-        })
-    } 
-
-    if (scrolIndicador == 0){
-        btnIndicador.forEach(element =>{
-            element.classList.remove('carrossel_titulos--btn--indicador--3'); 
-            element.classList.remove('carrossel_titulos--btn--indicador--2'); 
-            element.classList.add('carrossel_titulos--btn--indicador--1');
-        })
-    } 
+}
+ 
+function hide(event){
+    const pai = event.target.closest('.carrossel').previousElementSibling;
+    const filho = pai.querySelector('.carrossel_titulos--btn');
+    filho.style.visibility = 'hidden';
 }
 
-direita.addEventListener('mouseover',()=>{
-    btnIndicador.forEach(element =>{
-        element.style.visibility = 'visible';
-    })
+function show(event){
+    const pai = event.target.closest('.carrossel').previousElementSibling;
+    const filho = pai.querySelector('.carrossel_titulos--btn');
+    filho.style.visibility = 'visible';
+  
+}
+
+direita.forEach(element =>{
+    element.addEventListener('mouseover',show);
+})
+ 
+direita.forEach(element =>{
+    element.addEventListener('mouseleave',hide);
 })
 
-direita.addEventListener('mouseleave',()=>{
-    btnIndicador.forEach(element =>{
-        element.style.visibility = 'hidden';
-    })
+esquerda.forEach(element =>{
+    element.addEventListener('mouseover',show);
 })
-
-esquerda.addEventListener('mouseover',()=>{
-    btnIndicador.forEach(element =>{
-        element.style.visibility = 'visible';
-    })
-})
-
-esquerda.addEventListener('mouseleave',()=>{
-    btnIndicador.forEach(element =>{
-        element.style.visibility = 'hidden';
-    })
+ 
+esquerda.forEach(element =>{
+    element.addEventListener('mouseleave',hide);
 })

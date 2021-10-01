@@ -40,7 +40,7 @@ input.addEventListener('blur', ()=>{
 const scrollBlack = document.querySelector('.container__navegacao');
 
 addEventListener('scroll', ()=>{
-    if(window.scrollY >= 100) {
+    if(window.scrollY >= 40) {
         scrollBlack.classList.add('container__navegacao--escuro') 
     } else{
         scrollBlack.classList.remove('container__navegacao--escuro') 
