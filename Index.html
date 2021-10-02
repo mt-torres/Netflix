@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="src/style/input.css">
     <link rel="stylesheet" href="src/style/alerta.css">
     <link rel="stylesheet" href="src/style/carrossel.css">
+    <link rel="stylesheet" href="src/style/responsivo.css">
 
 
 
@@ -28,14 +29,15 @@
         <nav class="container__navegacao">
             <div class="container-1 ">
                 <h1 class="logo">Netflix</h1>
-                <select class="nav-1__responsivo" name="Navegar" id="Navegar">
-                    <option>Navegar</option>
-                    <option value="">Início</option>
-                    <option value="">Séries</option>
-                    <option value="">Filmes</option>
-                    <option value="">Bombando</option>
-                    <option value="">Minha Lista</option>
-                    </select>
+                <div class="nav-1__responsivo nav-1__responsivo--drop-down">
+                    <i class="nav-1__responsivo--drop-down--texto">Navegar</i>
+                    <ul class="nav-1__responsivo--drop-down--menu-suspenso">
+                        <li class="nav-1__responsivo__lista"><a class="nav-1__responsivo__lista--link" href="#">Inicio</a></li>
+                        <li class="nav-1__responsivo__lista"><a class="nav-1__responsivo__lista--link" href="#">Séries</a></li>
+                        <li class="nav-1__responsivo__lista"><a class="nav-1__responsivo__lista--link" href="#">Filmes</a></li>
+                        <li class="nav-1__responsivo__lista"><a class="nav-1__responsivo__lista--link" href="#">Bombando</a></li>
+                        <li class="nav-1__responsivo__lista"><a class="nav-1__responsivo__lista--link" href="#">Minha Lista</a></li>
+                    </div>
                 <ul class="navegacao">
                     <li><a href="#" class="navegacao__link">Início</a></li>
                     <li><a href="#" class="navegacao__link">Séries</a></li>
@@ -137,6 +139,38 @@
             <img class="box-filme" src="./src/Image/image-15.jpg">
         </div>
     </section>
+    
+    <div class="carrossel_titulos">
+        <h1 class="carrossel_titulos--texto" >Em alta</h1>
+        <div class="carrossel_titulos--btn">
+           <button class="carrossel_titulos--btn--indicador carrossel_titulos--btn--indicador--1"></button>
+           <button class="carrossel_titulos--btn--indicador carrossel_titulos--btn--indicador--1"></button>
+           <button class="carrossel_titulos--btn--indicador carrossel_titulos--btn--indicador--1"></button>
+        </div>
+        
+    </div>
+
+    <section class="carrossel">
+        <span class="carrossel__botao botao--left"></span>
+        <span class="carrossel__botao botao--right"></span>
+        <div class="carrossel__container">
+            <img class="box-filme" src="./src/Image/carrossel img/image - (1).jpg">
+            <img class="box-filme" src="./src/Image/carrossel img/image - (2).jpg">
+            <img class="box-filme" src="./src/Image/carrossel img/image - (3).jpg">
+            <img class="box-filme" src="./src/Image/carrossel img/image - (46).jpg">
+            <img class="box-filme" src="./src/Image/carrossel img/image - (5).jpg">
+            <img class="box-filme" src="./src/Image/carrossel img/image - (6).jpg">
+            <img class="box-filme" src="./src/Image/carrossel img/image - (7).jpg">
+            <img class="box-filme" src="./src/Image/carrossel img/image - (8).jpg">
+            <img class="box-filme" src="./src/Image/carrossel img/image - (9).jpg">
+            <img class="box-filme" src="./src/Image/carrossel img/image - (10).jpg">
+            <img class="box-filme" src="./src/Image/carrossel img/image - (11).jpg">
+            <img class="box-filme" src="./src/Image/carrossel img/image - (12).jpg">
+            <img class="box-filme" src="./src/Image/carrossel img/image - (13).jpg">
+            <img class="box-filme" src="./src/Image/carrossel img/image - (14).jpg">
+            <img class="box-filme" src="./src/Image/carrossel img/image - (15).jpg">
+        </div>
+    </section> 
 
     <div class="carrossel_titulos">
         <h1 class="carrossel_titulos--texto" >Assista novamente</h1>
@@ -152,21 +186,53 @@
         <span class="carrossel__botao botao--left"></span>
         <span class="carrossel__botao botao--right"></span>
         <div class="carrossel__container">
-            <img class="box-filme" src="./src/Image/image-2.jpg">
-            <img class="box-filme" src="./src/Image/image-3.jpg">
-            <img class="box-filme" src="./src/Image/image-1.jpg">
-            <img class="box-filme" src="./src/Image/image-4.jpg">
-            <img class="box-filme" src="./src/Image/image-5.jpg">
-            <img class="box-filme" src="./src/Image/image-6.jpg">
-            <img class="box-filme" src="./src/Image/image-7.jpg">
-            <img class="box-filme" src="./src/Image/image-8.jpg">
-            <img class="box-filme" src="./src/Image/image-9.jpg">
-            <img class="box-filme" src="./src/Image/image-10.jpg">
-            <img class="box-filme" src="./src/Image/image-11.jpg">
-            <img class="box-filme" src="./src/Image/image-12.jpg">
-            <img class="box-filme" src="./src/Image/image-13.jpg">
-            <img class="box-filme" src="./src/Image/image-14.jpg">
-            <img class="box-filme" src="./src/Image/image-15.jpg">
+            <img class="box-filme" src="./src/Image/carrossel img/image - (16).jpg">
+            <img class="box-filme" src="./src/Image/carrossel img/image - (17).jpg">
+            <img class="box-filme" src="./src/Image/carrossel img/image - (58).jpg">
+            <img class="box-filme" src="./src/Image/carrossel img/image - (19).jpg">
+            <img class="box-filme" src="./src/Image/carrossel img/image - (20).jpg">
+            <img class="box-filme" src="./src/Image/carrossel img/image - (21).jpg">
+            <img class="box-filme" src="./src/Image/carrossel img/image - (22).jpg">
+            <img class="box-filme" src="./src/Image/carrossel img/image - (23).jpg">
+            <img class="box-filme" src="./src/Image/carrossel img/image - (24).jpg">
+            <img class="box-filme" src="./src/Image/carrossel img/image - (25).jpg">
+            <img class="box-filme" src="./src/Image/carrossel img/image - (26).jpg">
+            <img class="box-filme" src="./src/Image/carrossel img/image - (27).jpg">
+            <img class="box-filme" src="./src/Image/carrossel img/image - (28).jpg">
+            <img class="box-filme" src="./src/Image/carrossel img/image - (29).jpg">
+            <img class="box-filme" src="./src/Image/carrossel img/image - (30).jpg">
+        </div>
+    </section> 
+
+    <div class="carrossel_titulos">
+        <h1 class="carrossel_titulos--texto" >Adicionados recentemente</h1>
+        <div class="carrossel_titulos--btn">
+           <button class="carrossel_titulos--btn--indicador carrossel_titulos--btn--indicador--1"></button>
+           <button class="carrossel_titulos--btn--indicador carrossel_titulos--btn--indicador--1"></button>
+           <button class="carrossel_titulos--btn--indicador carrossel_titulos--btn--indicador--1"></button>
+        </div>
+        
+    </div>
+
+    <section class="carrossel">
+        <span class="carrossel__botao botao--left"></span>
+        <span class="carrossel__botao botao--right"></span>
+        <div class="carrossel__container">
+            <img class="box-filme" src="./src/Image/carrossel img/image - (31).jpg">
+            <img class="box-filme" src="./src/Image/carrossel img/image - (32).jpg">
+            <img class="box-filme" src="./src/Image/carrossel img/image - (33).jpg">
+            <img class="box-filme" src="./src/Image/carrossel img/image - (34).jpg">
+            <img class="box-filme" src="./src/Image/carrossel img/image - (35).jpg">
+            <img class="box-filme" src="./src/Image/carrossel img/image - (36).jpg">
+            <img class="box-filme" src="./src/Image/carrossel img/image - (37).jpg">
+            <img class="box-filme" src="./src/Image/carrossel img/image - (38).jpg">
+            <img class="box-filme" src="./src/Image/carrossel img/image - (39).jpg">
+            <img class="box-filme" src="./src/Image/carrossel img/image - (40).jpg">
+            <img class="box-filme" src="./src/Image/carrossel img/image - (41).jpg">
+            <img class="box-filme" src="./src/Image/carrossel img/image - (42).jpg">
+            <img class="box-filme" src="./src/Image/carrossel img/image - (43).jpg">
+            <img class="box-filme" src="./src/Image/carrossel img/image - (44).jpg">
+            <img class="box-filme" src="./src/Image/carrossel img/image - (45).jpg">
         </div>
     </section> 
 

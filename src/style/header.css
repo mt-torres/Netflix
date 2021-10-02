@@ -173,12 +173,15 @@
 @media screen and (max-width: 880px) {
     .nav-1__responsivo{
         display: flex;
+        background-color: transparent;
     }
     .navegacao{
         display: none;
         
     }
-
+    .navegacao-2__objeto--texto{
+        display: none;
+    }
     .descricao-capa__titulo{
         font-size: 2.8rem;
         margin-top: 3rem;
@@ -213,7 +216,9 @@
     .logo{
         margin-right: 1rem;
     }
-    
+    .icon-search{
+        display: none;
+    }
     .descricao-capa__titulo{
         margin-top: 3rem;
         font-size: 3rem;

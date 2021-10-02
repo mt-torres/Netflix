@@ -1,0 +1,69 @@
+.nav-1__responsivo--drop-down:hover .nav-1__responsivo--drop-down--menu-suspenso {
+    background-color: rgba(0,0,0,.7);
+    visibility: visible;
+}
+
+.nav-1__responsivo--drop-down .nav-1__responsivo--drop-down--texto{
+    transition: transform ease-in-out .2s;
+    
+}
+
+.nav-1__responsivo--drop-down--menu-suspenso{
+    left:180px;
+    top: 75px;
+    background-color: var(--preto); 
+    height: 200px;
+    width: 175px;
+    background-color: rgba(0,0,0,.0);;
+    visibility: hidden;
+    position: absolute;
+    transition: all linear .2s;
+    font: inherit;
+    border-top: 1px solid white;
+
+}
+
+.nav-1__responsivo--drop-down--texto{
+    cursor: pointer;
+    line-height: 50px;
+    font-weight: 600;
+}
+.nav-1__responsivo--drop-down--texto::after{
+   background-image:url('../Image/icons/sort-down-solid.png');
+   background-size: 10px 10px;
+   background-repeat: no-repeat;
+   background-position-y: top;
+   display: inline-block;
+   width: 10px;
+   height: 10px;
+   margin-left: 4px;
+   content: '';
+
+
+   
+}
+
+
+.nav-1__responsivo__lista{
+    text-align: center;
+    box-sizing: border-box;
+    
+    
+}
+
+
+.nav-1__responsivo__lista--link{
+    text-decoration: none;
+    font-family: inherit;
+    color: white;
+    font-size: .85rem;
+    line-height: 40px;
+    
+    
+}
+
+.nav-1__responsivo__lista:hover{
+    background-color: rgba(0,0,0,1);
+    
+
+}
