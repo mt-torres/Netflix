@@ -4,7 +4,9 @@
 
 This is a cloned page from Netflix (for educational purpose only).
 
-I used the owl carousel (I faced some issues with carousel. I'll improve this function for next versions) Also I have build some javascript codes.
+It was build only using html, css, javascript and my curiosity. I learned how to work with event and bubbles, also how to add some css efects.
+
+
 
 
 
